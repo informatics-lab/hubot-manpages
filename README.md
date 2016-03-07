@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/ClaudeBot/hubot-manpages.svg)](https://travis-ci.org/ClaudeBot/hubot-manpages)
 [![devDependency Status](https://david-dm.org/ClaudeBot/hubot-manpages/dev-status.svg)](https://david-dm.org/ClaudeBot/hubot-manpages#info=devDependencies)
 
-A Hubot script for searching, and viewing examples in a collection of simplified, and community-driven man pages.
+A Hubot script for searching, and viewing examples in a collection of simplified, and community-driven man pages (powered by http://tldr-pages.github.io/).
 
 See [`src/manpages.coffee`](src/manpages.coffee) for full documentation.
 

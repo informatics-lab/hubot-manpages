@@ -1,6 +1,6 @@
 {
   "name": "hubot-manpages",
-  "description": "A Hubot script for searching, and viewing examples in a collection of simplified, and community-driven man pages.",
+  "description": "A Hubot script for searching, and viewing examples in a collection of simplified, and community-driven man pages (powered by http://tldr-pages.github.io/).",
   "version": "0.0.1",
   "author": "Ian Lai <os@fyianlai.com>",
   "license": "MIT",
