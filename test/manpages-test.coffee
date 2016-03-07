@@ -16,4 +16,5 @@ describe "manpages", ->
     require("../src/manpages")(@robot)
 
   it "registers a respond listener", ->
-    expect(@robot.respond).to.have.been.calledWith(/mp (.+)/i)
+    expect(@robot.respond).to.have.been.calledWith(/mp search (.+)/i)
+    expect(@robot.respond).to.have.been.calledWith(/mp random/i)

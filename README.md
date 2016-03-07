@@ -31,13 +31,14 @@ See [`src/manpages.coffee`](src/manpages.coffee) for full documentation.
 
 Command | Listener ID | Description
 --- | --- | ---
-hubot mp `command` | `manpages.search` | Returns tldr man page / examples for `command`
+hubot mp search `command` | `manpages.search` | Returns tldr man page / examples for `command`
+hubot mp random | `manpages.random` | Returns a random tldr man page / examples for a command
 
 
 ## Sample Interaction
 
 ```
-user1>> hubot mp alias
+user1>> hubot mp search alias
 hubot>>
 
     # alias
@@ -64,4 +65,5 @@ hubot>>
     - Override la as ls -a:
 
     `alias {{la}}="{{ls -a}}"`
+hubot>> user1: Original `alias` (common) tldr man page: https://github.com/tldr-pages/tldr/blob/master/pages/common/alias.md
 ```
