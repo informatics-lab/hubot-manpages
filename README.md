@@ -31,14 +31,14 @@ See [`src/manpages.coffee`](src/manpages.coffee) for full documentation.
 
 Command | Listener ID | Description
 --- | --- | ---
-hubot mp search `command` | `manpages.search` | Returns tldr man page / examples for `command`
-hubot mp random | `manpages.random` | Returns a random tldr man page / examples for a command
+hubot man `command` | `manpages.search` | Returns tldr man page / examples for `command`
+hubot random man | `manpages.random` | Returns a random tldr man page / examples for a command
 
 
 ## Sample Interaction
 
 ```
-user1>> hubot mp search alias
+user1>> man alias
 hubot>>
 
     # alias

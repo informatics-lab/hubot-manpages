@@ -6,8 +6,8 @@
 #   None
 #
 # Commands:
-#   hubot mp search <command> - Returns tldr man page / examples for <command>
-#   hubot mp random - Returns a random tldr man page / examples for a command
+#   hubot man <command> - Returns tldr man page / examples for <command>
+#   hubot random man - Returns a random tldr man page / examples for a command
 #
 # Notes:
 #   None
@@ -51,7 +51,7 @@ module.exports = (robot) ->
                 catch error
                     return robot.logger.error "hubot-manpages: #{error}"
 
-    robot.respond /mp search (.+)/i, id: "manpages.search", (res) ->
+    robot.hear /$man (.+)/i, id: "manpages.search", (res) ->
         cmd = res.match[1].trim()
         if command = _commandExists(cmd)
             _getCommand res, command, (link, content) =>
@@ -60,7 +60,7 @@ module.exports = (robot) ->
             return
         res.reply "The command you have entered, `#{cmd}`, cannot be found in tldr pages."
 
-    robot.respond /mp random/i, id: "manpages.random", (res) ->
+    robot.hear /$random man^/i, id: "manpages.random", (res) ->
         random = res.random _commands
         _getCommand res, random, (link, content) =>
             res.send content
